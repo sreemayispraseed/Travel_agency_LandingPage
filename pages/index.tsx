@@ -6,7 +6,7 @@ import Header from './Components/Header/Header'
 import travellergirl from '../pages/Assets/travellergirl.png'
 import styles from '../styles/Home.module.css'
 import playbutton from '../pages/Assets/playbutton.png'
-
+import { Title } from './Components/Title'
 const Home: NextPage = () => {
   return (
     <div >
@@ -29,15 +29,19 @@ const Home: NextPage = () => {
                 <Image src={playbutton}/>
               </div>
                <h5 className={styles.demotext}>Play demo</h5>
-          </div>
+            </div>
           </div>
              </div>
           </div>
-          
-       
-        <div className={styles.travelleriamge} >
+          <div className={styles.travelleriamge} >
           <Image src={travellergirl}></Image>
+          </div>
         </div>
+      <div className={styles.offercontainer}>
+         <Title
+         smalltitle='CATEGORY'
+         bigtitle='We Offer Best Services'
+         />
         </div>
       </div>
       

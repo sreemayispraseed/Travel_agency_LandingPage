@@ -7,6 +7,12 @@ import travellergirl from '../pages/Assets/travellergirl.png'
 import styles from '../styles/Home.module.css'
 import playbutton from '../pages/Assets/playbutton.png'
 import { Title } from './Components/Title'
+import { ServiceCard } from './Components/ServiceCard'
+import weather from '../pages/Assets/weather.png'
+import flight from '../pages/Assets/flight.webp'
+import events from '../pages/Assets/events.png'
+import settings from '../pages/Assets/settings.webp'
+import { DestinationCard } from './Components/DestinationCard'
 const Home: NextPage = () => {
   return (
     <div >
@@ -16,6 +22,7 @@ const Home: NextPage = () => {
       </Head>
      <div className={styles.landing_container}>
       <Header/>
+      <div className={styles.content_main_container}>
       <div className={styles.flex_container}>
         <div className={styles.leftsideTexts_Container}>
           <p className={styles.redtext}>BEST DESTINATIONS AROUND THE WORLD</p>
@@ -38,10 +45,42 @@ const Home: NextPage = () => {
           </div>
         </div>
       <div className={styles.offercontainer}>
-         <Title
+        <div className={styles.titlecard_container}>
+        <Title
          smalltitle='CATEGORY'
          bigtitle='We Offer Best Services'
          />
+        </div>
+        
+         <div className={styles.services_flex_container}>
+         <ServiceCard
+         image={weather}
+         name='Calculated weather'
+         description='Et deleniti dolor ab quibusdam blanditiis aut voluptatibus reiciendis sit repellat adipisci'
+         />
+         <ServiceCard
+         image={flight}
+         name='Best Flights'
+         description='Et deleniti dolor ab quibusdam blanditiis aut voluptatibus reiciendis sit repellat adipisci'
+         />
+          <ServiceCard
+         image={events}
+         name='Local Events'
+         description='Et deleniti dolor ab quibusdam blanditiis aut voluptatibus reiciendis sit repellat adipisci'
+         />
+          <ServiceCard
+         image={settings}
+         name='Customization'
+         description='Et deleniti dolor ab quibusdam blanditiis aut voluptatibus reiciendis sit repellat adipisci'
+         />
+         </div>
+         <Title
+         smalltitle='Top Selling'
+         bigtitle='Top Destinations'
+         />
+         
+        </div>
+
         </div>
       </div>
       

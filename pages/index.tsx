@@ -59,7 +59,7 @@ const Home: NextPage = () => {
          <div className={styles.services_flex_container}>
          <ServiceCard
          image={weather}
-         name='Calculated weather'
+         name='Calculated Weather'
          description='Et deleniti dolor ab quibusdam blanditiis aut voluptatibus reiciendis sit repellat adipisci'
          />
          <ServiceCard
@@ -86,22 +86,22 @@ const Home: NextPage = () => {
         <div className={styles.destinationcard_container}>
           <DestinationCard
             place={taj}
-            placename='Taj mahal,india'
-            likes='100.5k'
+            placename='Taj mahal,India'
+            likes='250.5k'
             icon={locationicon}
             days='10days Trip'
           />
           <DestinationCard
             place={bali}
-            placename='bali ,indonesia'
-            likes='25.5k'
+            placename='Bali ,Indonesia'
+            likes='150.5k'
             icon={locationicon}
             days='15days Trip'
           />
           <DestinationCard
             place={uk}
-            placename='London,Uk'
-            likes='90.5k'
+            placename='Scotland,UK'
+            likes='156.5k'
             icon={locationicon}
             days='25days Trip'
           />

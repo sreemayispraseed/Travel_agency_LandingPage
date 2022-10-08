@@ -74,3 +74,14 @@
   flex-direction: column;
   gap: 25px;
 }
+.destinationcard_container{
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.destination_title_card_container{
+  margin-bottom: 25px;
+  margin-top: 5rem;
+}

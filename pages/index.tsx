@@ -12,6 +12,10 @@ import weather from '../pages/Assets/weather.png'
 import flight from '../pages/Assets/flight.webp'
 import events from '../pages/Assets/events.png'
 import settings from '../pages/Assets/settings.webp'
+import bali from '../pages/Assets/bali.webp'
+import taj from '../pages/Assets/taj.avif'
+import uk from '../pages/Assets/us.webp'
+import locationicon from '../pages/Assets/locationicon.png'
 import { DestinationCard } from './Components/DestinationCard'
 const Home: NextPage = () => {
   return (
@@ -74,10 +78,35 @@ const Home: NextPage = () => {
          description='Et deleniti dolor ab quibusdam blanditiis aut voluptatibus reiciendis sit repellat adipisci'
          />
          </div>
+         <div className={styles.destination_title_card_container}>
          <Title
          smalltitle='Top Selling'
          bigtitle='Top Destinations'
          />
+        <div className={styles.destinationcard_container}>
+          <DestinationCard
+            place={taj}
+            placename='Taj mahal,india'
+            likes='100.5k'
+            icon={locationicon}
+            days='10days Trip'
+          />
+          <DestinationCard
+            place={bali}
+            placename='bali ,indonesia'
+            likes='25.5k'
+            icon={locationicon}
+            days='15days Trip'
+          />
+          <DestinationCard
+            place={uk}
+            placename='London,Uk'
+            likes='90.5k'
+            icon={locationicon}
+            days='25days Trip'
+          />
+         </div>
+        </div>
          
         </div>
 

@@ -1,0 +1,29 @@
+.place_image_container{
+   width: 250px;
+   
+}
+.DestinationImageCard{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.countryname_likes_container{
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
+}
+.icon_container{
+    width: 25px;
+}
+.icon_days_container{
+    display: flex;
+    gap: 15px;
+}
+.DestinationImageCard:hover,
+.DestinationImageCard:focus,
+.DestinationImageCard:active{
+    box-shadow: 5px 5px 5px 5px #E2E2E2;
+    
+}

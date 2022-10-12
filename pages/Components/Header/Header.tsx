@@ -10,8 +10,6 @@ const headernavlinks=[
     {title:'Flights'},
     {title:'Bookings'},
     {title:'Login'}
-
-
 ]
 const Header = () => {
   return (
@@ -26,9 +24,6 @@ const Header = () => {
             <button className={styles.signup_button}>SignUp</button>
             <Dropdown/>
         </div>
-        
-
-
     </div>
   )
 }

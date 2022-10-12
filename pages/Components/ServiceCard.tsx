@@ -15,7 +15,7 @@ export const ServiceCard = ({image,name,description}:PropsTypes) => {
         </div>
         <h5 className={styles.nametext}>{name}</h5>
         <p className={styles.descriptiontext}>{description}</p> 
-
     </div>
   )
 }
+
